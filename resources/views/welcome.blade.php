@@ -8,88 +8,46 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400,500" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+        <div class="container">
+    <div class="product_lists zoomOut clearfix">
+        <div class="product">
+            <div class="img_preview">
+                <span class="onsale">SALE</span>
+                <img src="book-web-design.jpg" alt="web design book">
+            </div>
+            <div class="product_detail">
+                <div class="inner">
+                    <a class="title" href="#">High Perfomrance Javascript</a>
+                    <a class="author" href="#">By Nicolas C. Zakas</a>
+                    <div class="price">
+                        <span class="compare_price">$700.50</span>
+                        <span class="actaul_price">$650.50</span>
+                    </div>
+                    <div class="product_categories">
+                        <span class="category">
+                            <a href="#">Programming</a>
+                        </span>
+                        <span class="comma_separator">,</span>
+                        <span class="category">
+                            <a href="#">Web Design</a>
+                        </span>
+                    </div>
+                    <div class="buy">
+                        <a class="buy_btn" href="#">add to cart</a>
+                    </div>
+                    <div class="add_to_wishlist">
+                         <a class="" href="#">Add to wishlist</a>
+                    </div>
                 </div>
             </div>
+
         </div>
+    </div>
+</div>
     </body>
 </html>
