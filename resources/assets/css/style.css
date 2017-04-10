@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:after, .clearfix:before {
+  position: relative;
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.product_lists {
+  position: relative;
+  width: 100%;
+}
+
+.product_lists.zoomOut .product .product_detail {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+}
+
+.product_lists.zoomOut .product:hover .product_detail {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+.product_lists .product {
+  position: relative;
+  width: 33.33%;
+  float: left;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product_lists .product img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.product_lists .product .onsale {
+  position: absolute;
+  top: 15px;
+  left: -40px;
+  z-index: 10;
+  transform: rotate(-45deg);
+  background: #020202;
+  padding: 6px 50px;
+  line-height: 1;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.product_lists .product .product_detail {
+  position: absolute;
+  cursor: auto;
+  backface-visibility: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product_lists .product .product_detail .inner {
+  position: relative;
+  vertical-align: middle;
+  display: block;
+  width: 100%;
+  top: 0;
+}
+
+.product_lists .product .product_detail .inner a {
+  text-decoration: none;
+}
+
+.product_lists .product .product_detail .inner > a, .product_lists .product .product_detail .inner span, .product_lists .product .product_detail .inner div {
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  text-decoration: none;
+}
+
+.product_lists .product .product_detail .inner a.title {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.product_lists .product .product_detail .inner a.author {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.product_lists .product .product_detail .inner span.compare_price {
+  color: #777;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.product_lists .product .product_detail .inner span.actaul_price {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product_lists .product .product_detail .inner .product_categories span {
+  display: inline-block;
+}
+
+.product_lists .product .product_detail .inner .product_categories span a {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.product_lists .product .product_detail .inner .product_categories span.comma_separator {
+  font-size: 1.5rem;
+}
+
+.product_lists .product .product_detail .inner a.buy_btn {
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  box-shadow: 1px 2px 4px rgba(8, 8, 8, 0.4);
+}
+
+.product_lists .product .product_detail .inner a.buy_btn:hover {
+  box-shadow: none;
+}
+
+.product_lists .product .product_detail .inner .add_to_wishlist {
+  margin-top: 20px;
+}
+
+.product_lists .product .product_detail .inner .add_to_wishlist a {
+  position: relative;
+  color: #000;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.product_lists .product .product_detail .inner .add_to_wishlist a:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #efc5ae;
+}

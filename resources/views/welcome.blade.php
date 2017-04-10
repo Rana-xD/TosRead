@@ -9,8 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:300i,400,500" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
         <div class="container">
@@ -18,7 +18,7 @@
         <div class="product">
             <div class="img_preview">
                 <span class="onsale">SALE</span>
-                <img src="book-web-design.jpg" alt="web design book">
+                <img src="assets/images/book-web-design.jpg" alt="web design book">
             </div>
             <div class="product_detail">
                 <div class="inner">
